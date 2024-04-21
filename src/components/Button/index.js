@@ -1,4 +1,9 @@
 import { Link } from 'react-router-dom'
+import classNames from 'classnames/bind'
+
+import styles from './Button.module.css'
+
+const cx = classNames.bind(styles)
 
 export default function Button({
     to,
@@ -36,15 +41,15 @@ export default function Button({
         Comp = 'a'
         props.href = href
     }
-    const classes = {
-        'bg-colorPrimary rounded-md text-white px-4 py-1': primary,
-        'bg-colorSecondary rounded-md text-white px-4 py-1': secondary,
+    const classes = cx({
+        'bg-colorPrimary rounded-md text-white': primary,
+        'bg-colorSecondary rounded-md text-white': secondary,
         'text-colorDark text-md': normal,
         'rounded-full': rounded,
         'text-xl': large,
         'text-sm': small,
         [className]: className,
-    }
+    })
     return (
         <Comp className={classes} {...props} styles={styles}>
             <span>{children}</span>

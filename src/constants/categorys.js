@@ -5,3 +5,5 @@ const categorys = [
     { path: '/bang-gia-dich-vu', title: 'Bảng giá dịch vụ' },
     { path: '/tin-tuc', title: 'Tin tức' },
 ]
+
+export default categorys
