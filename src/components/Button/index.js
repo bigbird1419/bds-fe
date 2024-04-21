@@ -15,7 +15,7 @@ export default function Button({
     large = false,
     small = false,
     className,
-    onclick = () => { },
+    onClick = () => {},
     disabled = false,
     children,
     styles,
@@ -23,7 +23,7 @@ export default function Button({
 }) {
     let Comp = 'button'
     let props = {
-        onclick,
+        onClick,
         ...passProps
     }
     if (disabled) {

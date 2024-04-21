@@ -1,5 +1,6 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Supporter from './components/Supporter'
 
 export default function DefaultLayout({ children }) {
     return (
@@ -12,7 +13,7 @@ export default function DefaultLayout({ children }) {
             </div>
             <div className="container">
                 <div>
-
+                    <Supporter />
                 </div>
                 <div>
                     <Footer />
