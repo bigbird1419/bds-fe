@@ -16,7 +16,8 @@ module.exports = {
                 colorCcc: '#ccc',
                 colorDadada: '#dadada',
                 colorWarning: ' #f6c23e',
-                colorSuccess: '#1cc88a'
+                colorSuccess: '#1cc88a',
+                colorFB: '#345387'
             },
             zIndex: {
                 '100': '100',

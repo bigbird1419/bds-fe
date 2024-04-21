@@ -1,5 +1,5 @@
 import Button from "../../../components/Button";
-import logoUrl from '../../../assets/logo-bds123.svg'
+import Logo from '../Logo'
 import categorys from "../../../constants/categorys";
 import routes from '../../../constants/routes'
 
@@ -8,9 +8,7 @@ export default function Header() {
         <div className="header px-4 py-2">
             <div className="flex justify-between items-center">
                 <div>
-                    <Button to={'/'} >
-                        <img src={logoUrl} alt="BDS" className="w-40" />
-                    </Button>
+                    <Logo/>
                 </div>
                 <div className="flex-auto mx-4">
                     <ul className="flex">
