@@ -1,3 +1,4 @@
+import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Supporter from './components/Supporter'
@@ -12,6 +13,9 @@ export default function DefaultLayout({ children }) {
                 {children}
             </div>
             <div className="container">
+                <div>
+                    <Feedback />
+                </div>
                 <div>
                     <Supporter />
                 </div>

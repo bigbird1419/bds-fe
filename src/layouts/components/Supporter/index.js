@@ -10,7 +10,7 @@ const supporters = [
 export default function Supporter() {
     return (
         <div className="wrapper mt-6">
-            <div className="container max-w-4xl p-4 shadow-md">
+            <div className="container max-w-5xl p-4 shadow-md">
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <div className='mt-4'><img src={supportUrl} alt='' className='w-full h-auto' /></div>
