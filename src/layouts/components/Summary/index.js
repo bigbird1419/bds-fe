@@ -14,7 +14,7 @@ export default function Summary() {
 
     return (
         <div className="wrapper">
-            <div className="container max-w-5xl mt-6">
+            <div className="container max-w-5xl 8">
                 <div className="row">
                     <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                         <div>

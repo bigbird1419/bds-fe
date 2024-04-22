@@ -1,3 +1,4 @@
+import Blog from "./components/Blog";
 import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -14,6 +15,9 @@ export default function DefaultLayout({ children }) {
                 {children}
             </div>
             <div className="container">
+                <div>
+                    <Blog />
+                </div>
                 <div>
                     <Summary />
                 </div>

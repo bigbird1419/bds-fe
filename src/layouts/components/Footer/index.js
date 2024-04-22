@@ -14,7 +14,7 @@ const supports = [
 
 export default function Footer() {
     return (
-        <div className="wrapper mt-9 mb-4 p-9 border-solid border-y border-gray-300">
+        <div className="wrapper my-8 p-9 border-solid border-y border-gray-300">
             <div className="container">
                 <div className="row">
                     <div className="col-3">

@@ -9,7 +9,7 @@ const supporters = [
 
 export default function Supporter() {
     return (
-        <div className="wrapper mt-6">
+        <div className="wrapper my-8">
             <div className="container max-w-5xl p-4 shadow-md">
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
