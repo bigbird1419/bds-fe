@@ -1,9 +1,9 @@
-import Blog from "./components/Blog";
-import Feedback from "./components/Feedback";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Summary from "./components/Summary";
-import Supporter from './components/Supporter'
+import Blog from "../components/Blog";
+import Feedback from "../components/Feedback";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Summary from "../components/Summary";
+import Supporter from '../components/Supporter'
 
 export default function DefaultLayout({ children }) {
     return (
