@@ -2,6 +2,7 @@ import Blog from "../components/Blog";
 import Feedback from "../components/Feedback";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Payment from "../components/Payment";
 import Summary from "../components/Summary";
 import Supporter from '../components/Supporter'
 
@@ -14,7 +15,10 @@ export default function DefaultLayout({ children }) {
             <div>
                 {children}
             </div>
-            <div className="container">
+            <div className="">
+                <div>
+                    <Payment />
+                </div>
                 <div>
                     <Blog />
                 </div>

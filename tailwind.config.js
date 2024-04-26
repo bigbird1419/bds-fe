@@ -17,7 +17,8 @@ module.exports = {
                 colorDadada: '#dadada',
                 colorWarning: ' #f6c23e',
                 colorSuccess: '#1cc88a',
-                colorFB: '#345387'
+                colorFB: '#345387',
+                colorF9: '#f9f9f9'
             },
             zIndex: {
                 '100': '100',
