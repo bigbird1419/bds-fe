@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Payment from "../components/Payment";
 import Summary from "../components/Summary";
 import Supporter from '../components/Supporter'
+import CategoryChild from '../components/CategoryChild'
 
 export default function DefaultLayout({ children }) {
     return (
@@ -16,6 +17,9 @@ export default function DefaultLayout({ children }) {
                 {children}
             </div>
             <div className="">
+                <div>
+                    <CategoryChild />
+                </div>
                 <div>
                     <Payment />
                 </div>
