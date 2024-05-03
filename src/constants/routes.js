@@ -6,5 +6,6 @@ const routes = {
     blogs: '/tin-tuc',
     muaban: '/mua-ban',
     chothue: '/cho-thue',
+    pricing: '/bang-gia-dich-vu'
 }
 export default routes
