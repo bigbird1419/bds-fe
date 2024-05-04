@@ -1,6 +1,3 @@
-import Payment from '../../layouts/components/Payment'
-import Footer from '../../layouts/components/Footer'
-
 const pricings = [
     {
         primaryColor: '#055699',
@@ -112,12 +109,6 @@ export default function PricingPage() {
                             ))}
                         </tbody>
                     </table>
-                </div>
-                <div className='my-6'>
-                    <Payment />
-                </div>
-                <div className='py-6'>
-                    <Footer />
                 </div>
             </div>
         </div>

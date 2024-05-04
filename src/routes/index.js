@@ -1,5 +1,6 @@
 import routes from "../constants/routes"
 import OnlyHeaderLayout from "../layouts/OnlyHeaderLayout"
+import NoFilterLayout from '../layouts/NoFilterLayout'
 import Home from '../pages/Home'
 import Login from '../pages/Login'
 import Signup from '../pages/Signup'
@@ -11,7 +12,7 @@ const publicRoutes = [
     { path: routes.login, component: Login },
     { path: routes.signup, component: Signup },
     { path: routes.blogs, component: Blogs, layout: OnlyHeaderLayout },
-    { path: routes.pricing, component: PricingPage, layout: OnlyHeaderLayout },
+    { path: routes.pricing, component: PricingPage, layout: NoFilterLayout },
 ]
 
 export { publicRoutes }

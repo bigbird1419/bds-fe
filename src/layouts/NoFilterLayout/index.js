@@ -1,34 +1,22 @@
-import Blog from "../components/Blog";
 import Feedback from "../components/Feedback";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Payment from "../components/Payment";
 import Summary from "../components/Summary";
 import Supporter from '../components/Supporter'
-import CategoryChild from '../components/CategoryChild'
-import Filter from "../components/Filter";
 
-export default function DefaultLayout({ children }) {
+export default function NoFilterLayout({ children }) {
     return (
         <div className="wrapper">
             <div>
                 <Header />
             </div>
             <div>
-                <Filter />
-            </div>
-            <div>
                 {children}
             </div>
-            <div className="">
-                <div>
-                    <CategoryChild />
-                </div>
+            <div className="my-6">
                 <div>
                     <Payment />
-                </div>
-                <div>
-                    <Blog />
                 </div>
                 <div>
                     <Summary />
