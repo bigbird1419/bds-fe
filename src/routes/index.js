@@ -9,8 +9,8 @@ import PricingPage from "../pages/PricingPage"
 
 const publicRoutes = [
     { path: routes.home, component: Home },
-    { path: routes.login, component: Login },
-    { path: routes.signup, component: Signup },
+    { path: routes.login, component: Login, layout: OnlyHeaderLayout },
+    { path: routes.signup, component: Signup, layout: OnlyHeaderLayout },
     { path: routes.blogs, component: Blogs, layout: OnlyHeaderLayout },
     { path: routes.pricing, component: PricingPage, layout: NoFilterLayout },
 ]

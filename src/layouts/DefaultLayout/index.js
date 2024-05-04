@@ -11,10 +11,10 @@ import Filter from "../components/Filter";
 export default function DefaultLayout({ children }) {
     return (
         <div className="wrapper">
-            <div>
+            <div className="header">
                 <Header />
             </div>
-            <div>
+            <div className="filter">
                 <Filter />
             </div>
             <div>

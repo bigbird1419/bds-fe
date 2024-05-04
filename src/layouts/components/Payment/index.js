@@ -28,8 +28,8 @@ export default function Payment() {
                 <div className="mt-4">
                     <div className="row">
                         {payments.map((payment, i) => (
-                            <div className='col-xl-4 col-lg-4 col-md-6 col-sm-6'>
-                                <div className='my-3 py-3 border-1 border-gray-100 rounded bg-white hover:translate-y-[-10%] transition-all duration-300' key={i}>
+                            <div className='col-xl-4 col-lg-4 col-md-6 col-sm-6' key={i}>
+                                <div className='my-3 py-3 border-1 border-gray-100 rounded bg-white hover:translate-y-[-10%] transition-all duration-300'>
                                     <img src={payment.img} alt={payment.title} className='block w-20 h-12 object-contain my-3 mx-auto' />
                                     <p className='font-bold text-sm text-center'>{payment.title}</p>
                                 </div>

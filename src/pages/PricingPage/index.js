@@ -56,7 +56,7 @@ export default function PricingPage() {
         <div className="wrapper">
             <div>
                 <div
-                    className="text-white p-4"
+                    className="text-white flex flex-col items-center justify-center h-44"
                     style={{ 'background': '#25419e url(https://bds123.vn/images/pricing-bg-2.png) center no-repeat', 'backgroundSize': 'cover' }}
                 >
                     <h1 className="text-6xl font-bold text-center mb-3">Bảng giá dịch vụ</h1>

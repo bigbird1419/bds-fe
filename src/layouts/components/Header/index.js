@@ -22,13 +22,13 @@ export default function Header() {
                 <div>
                     <div className="flex items-center justify-start">
                         <div className="mr-4">
-                            <Button normal small to={routes.signup} className={'opacity-90 hover:opacity-100'}>
+                            <Button normal small to={routes.signup} className={'opacity-90 hover:opacity-100 hover:bg-blue-100 p-2 rounded'}>
                                 <i className="fa-solid fa-user-plus mr-2"></i>
                                 Đăng ký
                             </Button>
                         </div>
                         <div className="mr-4">
-                            <Button normal small to={routes.login} className={'opacity-90 hover:opacity-100'}>
+                            <Button normal small to={routes.login} className={'opacity-90 hover:opacity-100 hover:bg-blue-100 p-2 rounded'}>
                                 <i className="fa-solid fa-arrow-right-to-bracket mr-2"></i>
                                 Đăng nhập
                             </Button>
