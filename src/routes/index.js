@@ -6,6 +6,7 @@ import Login from '../pages/Login'
 import Signup from '../pages/Signup'
 import Blogs from "../pages/Blogs"
 import PricingPage from "../pages/PricingPage"
+import PostPage from "../pages/PostPage"
 
 const publicRoutes = [
     { path: routes.home, component: Home },
@@ -13,6 +14,7 @@ const publicRoutes = [
     { path: routes.signup, component: Signup, layout: OnlyHeaderLayout },
     { path: routes.blogs, component: Blogs, layout: OnlyHeaderLayout },
     { path: routes.pricing, component: PricingPage, layout: NoFilterLayout },
+    { path: routes.post, component: PostPage, layout: OnlyHeaderLayout },
 ]
 
 export { publicRoutes }
