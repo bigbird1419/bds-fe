@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 export default function SwiperImg({ data }) {
+    //chuaw commit
     return (
         <div className='relative'>
             <Swiper
