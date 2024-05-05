@@ -4,8 +4,8 @@ const routes = {
     signup: '/signup',
     contact: '/ho-tro',
     blogs: '/tin-tuc',
-    muaban: '/mua-ban',
-    chothue: '/cho-thue',
+    muaban: '/categorys/mua-ban',
+    chothue: '/categorys/cho-thue',
     pricing: '/bang-gia-dich-vu',
     post: '/posts/:post',
     category: '/categorys/:category'
