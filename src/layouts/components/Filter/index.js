@@ -1,8 +1,14 @@
 import FillterItem from "./FilterItem"
 
 const giaoDich = [
-    {title: 'Mua bán', path: '/mua-ban'},
-    {title: 'Cho thuê', path: '/cho-thue'},
+    { title: 'Mua bán', path: 'category/mua-ban' },
+    { title: 'Cho thuê', path: 'category/cho-thue' },
+]
+const prices = [
+    {title: 'Duoi 500tr', path: 'category/'}, 
+    {title: 'Duoi 800tr', path: 'category/'}, 
+    {title: 'Duoi 1ty', path: 'category/'}, 
+    {title: 'Duoi 3ty', path: 'category/'}, 
 ]
 
 export default function Filter() {
@@ -13,8 +19,8 @@ export default function Filter() {
                     <FillterItem type={'list'} data={giaoDich} head={'Giao dịch'} icon={<i className="fa-solid fa-angle-down"></i>} />
                     <FillterItem type={'list'} data={giaoDich} head={'Loại nhà đất'} icon={<i className="fa-solid fa-angle-down"></i>} />
                     <FillterItem type={'list'} data={giaoDich} head={'Khu vực'} icon={<i className="fa-solid fa-angle-down"></i>} />
-                    <FillterItem type={'range'} head={'Khoảng giá'} icon={<i className="fa-solid fa-angle-down"></i>} />
-                    <FillterItem type={'range'} head={'Diện tích'} icon={<i className="fa-solid fa-angle-down"></i>} />
+                    <FillterItem type={'list'} data={prices} head={'Khoảng giá'} icon={<i className="fa-solid fa-angle-down"></i>} />
+                    <FillterItem type={'list'} data={prices} head={'Diện tích'} icon={<i className="fa-solid fa-angle-down"></i>} />
                 </div>
             </div>
         </div>
