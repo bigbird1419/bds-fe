@@ -12,7 +12,7 @@ export default function PostItem({ post }) {
                 </div>
                 <div className="ml-4">
                     <div className="flex flex-col justify-between">
-                        <h3 className="text-colorPrimary text-md font-semibold my-2">
+                        <h3 className="text-colorPrimary text-xl font-semibold my-2">
                             <Button to={`/posts/1`}>{post.head}</Button>
                         </h3>
                         <p className="my-2 flex justify-between items-center">

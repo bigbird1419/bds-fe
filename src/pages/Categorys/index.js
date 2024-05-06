@@ -1,6 +1,8 @@
 import Button from "../../components/Button";
+import Pagination from "../../components/Pagination";
 import Posts from "../../components/Posts";
 import categorys from "../../constants/categorys";
+import posts from "../../constants/posts";
 
 export default function Categorys() {
 
@@ -9,8 +11,11 @@ export default function Categorys() {
             <div className="container">
                 <div className="row">
                     <div className="col-xl-8 col-lg-8 col-md-6 col-sm-12">
-                        <div>
-                            <Posts />
+                        <div className="mb-4">
+                            <Posts data={posts} />
+                        </div>
+                        <div className="my-4">
+                            <Pagination totalPage={10} page={1}/>
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
