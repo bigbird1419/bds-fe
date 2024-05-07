@@ -12,7 +12,7 @@ const posts = [
             'https://bds123.cdn.static123.com/images/thumbs/900x600/fit/2024/05/05/7_1714895011.jpg',
             'https://bds123.cdn.static123.com/images/thumbs/900x600/fit/2024/05/05/5_1714895010.jpg'
         ],
-        createdDate: '',
+        createdDate: '12/4/2024 9:00 Am',
         createdBy: '',
         user: {
             name: 'Anh Minh',
@@ -33,7 +33,7 @@ const posts = [
             'https://bds123.cdn.static123.com/images/thumbs/900x600/fit/2024/05/05/7_1714895011.jpg',
             'https://bds123.cdn.static123.com/images/thumbs/900x600/fit/2024/05/05/5_1714895010.jpg'
         ],
-        createdDate: '',
+        createdDate: '12/4/2024 9:00 Am',
         createdBy: '',
         user: {
             name: 'Anh Minh',

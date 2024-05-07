@@ -28,11 +28,11 @@ export default function PostPage() {
                             </div>
                             <div className="summary mb-4">
                                 <h3 className="underline text-md font-bold mb-2">Tóm tắt tin đăng</h3>
-                                <p className="text-md p-3 rounded bg-gray-100">{post.summaryContent}</p>
+                                <p className="text-sm p-3 rounded bg-gray-100">{post.summaryContent}</p>
                             </div>
                             <div className="description mb-4">
                                 <h3 className="underline text-md font-bold mb-3">Thông tin mô tả</h3>
-                                <div className="p-3 rounded bg-gray-100">
+                                <div className="p-3 text-sm rounded bg-gray-100">
                                     {post.description.split('. ').map((item, i) => (
                                         <p key={i} className="mb-2">{item}</p>
                                     ))}
