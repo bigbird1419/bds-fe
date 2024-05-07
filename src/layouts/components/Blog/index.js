@@ -22,6 +22,7 @@ export default function Blog() {
                                 </div>
                             )
                         }
+                        return null;
                     })}
                     <div className='col-xl-4 col-lg-4 col-md-12 col-sm-12'>
                         <div className='mt-3'>
@@ -39,6 +40,7 @@ export default function Blog() {
                                         </div>
                                     )
                                 }
+                                return null;
                             })}
                         </div>
                     </div>

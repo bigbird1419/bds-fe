@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 import blogs from "../../constants/blogs"
+import Button from "../../components/Button"
 
 export default function Blogs() {
     const [curBlog, setCurBlog] = useState({})
@@ -59,6 +60,7 @@ export default function Blogs() {
                                                 </div>
                                             )
                                         }
+                                        return null;
                                     })}
                                 </div>
                             </div>
@@ -67,8 +69,12 @@ export default function Blogs() {
                     :
                     <div className=" my-4">
                         <div className="row">
-                            <h1 className="text-colorSecondary underline text-md cursor-pointer mb-3"
-                                onClick={() => hanldeSetCurBlog({})}>Tin tức</h1>
+                            <div>
+                                <Button className="text-gray-500 underline text-md cursor-pointer mb-3" to={'/'}>Trang chủ</Button>
+                                <i className="fa-solid fa-angle-right mx-2"></i>
+                                <Button className="text-colorSecondary underline text-md cursor-pointer mb-3"
+                                    onClick={() => hanldeSetCurBlog({})}>Tin tức</Button>
+                            </div>
                             <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                                 <div className="">
                                     <h1 className="text-3xl font-semibold">{curBlog.header}</h1>
