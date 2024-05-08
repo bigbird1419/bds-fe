@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import { publicRoutes } from './routes'
+import { publicRoutes, privateRoutes } from './routes'
 import DefaultLayout from './layouts/DefaultLayout'
+import LayoutAdmin from './pages/Admin/Layout'
 
 export default function App() {
     return (
@@ -23,6 +24,20 @@ export default function App() {
                                     <Layout>
                                         <Page />
                                     </Layout>
+                                }
+                            />
+                        )
+                    })}
+                    {privateRoutes.map((route, i) => {
+                        const Page = route.component
+                        return (
+                            <Route
+                                key={i}
+                                path={route.path}
+                                element={
+                                    <LayoutAdmin>
+                                        <Page />
+                                    </LayoutAdmin>
                                 }
                             />
                         )

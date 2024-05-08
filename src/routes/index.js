@@ -8,6 +8,7 @@ import Blogs from "../pages/Blogs"
 import PricingPage from "../pages/PricingPage"
 import PostPage from "../pages/PostPage"
 import Categorys from "../pages/Categorys"
+import AdminHome from '../pages/Admin/Home'
 
 const publicRoutes = [
     { path: routes.home, component: Home },
@@ -19,4 +20,8 @@ const publicRoutes = [
     { path: routes.category, component: Categorys },
 ]
 
-export { publicRoutes }
+const privateRoutes = [
+    { path: routes.adminHome, component: AdminHome },
+]
+
+export { publicRoutes, privateRoutes }

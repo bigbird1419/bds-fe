@@ -8,6 +8,7 @@ const routes = {
     chothue: '/categorys/cho-thue',
     pricing: '/bang-gia-dich-vu',
     post: '/posts/:post',
-    category: '/categorys/:category'
+    category: '/categorys/:category',
+    adminHome: '/admin',
 }
 export default routes
