@@ -17,13 +17,13 @@ export default function DefaultLayout({ children }) {
             <div className="filter">
                 <Filter />
             </div>
+            <div className="category my-6">
+                <CategoryChild />
+            </div>
             <div>
                 {children}
             </div>
             <div className="">
-                <div>
-                    <CategoryChild />
-                </div>
                 <div>
                     <Payment />
                 </div>

@@ -5,7 +5,7 @@ export default function PostItem({ post }) {
     return (
         <div className="wrapper mb-4 p-3">
             <div className="flex">
-                <div className="">
+                <div className=" my-auto">
                     <div className="rounded-md overflow-hidden w-56">
                         <img src={post.images[0]} alt="" className="w-full h-56" />
                     </div>
@@ -17,11 +17,11 @@ export default function PostItem({ post }) {
                         </h3>
                         <p className="my-2 flex justify-between items-center">
                             <span className="text-colorSecondary text-lg font-semibold mr-6"><i className="fa-solid fa-tag mr-2"></i> {post.price}</span>
-                            <span className="mr-6"><i className="fa-regular fa-square-full mr-2"></i>{post.area}m<sup>2</sup></span>
-                            <span className="mr-6"><i className="fa-regular fa-clock mr-2"></i> {post.createdDate}</span>
+                            <span className="mr-6 text-sm"><i className="fa-regular fa-square-full mr-2"></i>{post.area}m<sup>2</sup></span>
+                            <span className="mr-6 text-sm"><i className="fa-regular fa-clock mr-2"></i> {post.createdDate}</span>
                         </p>
                         <p className="text-xs text-gray-800 my-2"><i className="fa-solid fa-location-dot mr-2"></i> {post.address}</p>
-                        <p className="my-2 text-md text-gray-400">
+                        <p className="my-2 text-sm   text-gray-400">
                             {post.summaryContent}
                         </p>
                         <div className="my-2 flex items-center">
