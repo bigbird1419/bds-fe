@@ -1,10 +1,34 @@
 import routes from "./routes"
 
 const adminCategory = [
-    {path: routes.adminHome, title: 'Trang chủ'},
-    {path: routes.adminHome, title: 'Trang chủ'},
-    {path: routes.adminHome, title: 'Trang chủ'},
-    {path: routes.adminHome, title: 'Trang chủ'},
+    { path: routes.adminHome, title: 'Trang chủ', icon: <i className="fa-solid fa-house"></i> },
+    {
+        path: routes.adminHome,
+        title: 'Trang chủ',
+        icon: <i className="fa-solid fa-house"></i>,
+        children: [
+            { path: routes.adminHome, title: 'Sua' },
+            { path: routes.adminHome, title: 'Sua' },
+        ]
+    },
+    {
+        path: routes.adminHome,
+        title: 'Trang chủ',
+        icon: <i className="fa-solid fa-house"></i>,
+        children: [
+            { path: routes.adminHome, title: 'Sua' },
+            { path: routes.adminHome, title: 'Sua' },
+        ]
+    },
+    {
+        path: routes.adminHome,
+        title: 'Trang chủ',
+        icon: <i className="fa-solid fa-house"></i>,
+        children: [
+            { path: routes.adminHome, title: 'Sua' },
+            { path: routes.adminHome, title: 'Sua' },
+        ]
+    },
 ]
 
 export default adminCategory
