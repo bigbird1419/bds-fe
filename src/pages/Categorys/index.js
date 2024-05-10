@@ -32,6 +32,7 @@ export default function Categorys() {
                                         </div>
                                     )
                                 }
+                                return null
                             })}
                         </div>
                     </div>

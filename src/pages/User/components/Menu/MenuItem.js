@@ -15,7 +15,7 @@ export default function MenuItem({ category }) {
                 <span className='mx-2'>{category.title}</span>
                 {category?.children?.length &&
                     <span className='absolute right-5 top-1/2 translate-y-[-50%]'>
-                        {isShowChildren ? <i className="fa-solid fa-angle-down"></i> : <i class="fa-solid fa-angle-right"></i>}
+                        {isShowChildren ? <i className="fa-solid fa-angle-down"></i> : <i className="fa-solid fa-angle-right"></i>}
                     </span>
                 }
             </Button>

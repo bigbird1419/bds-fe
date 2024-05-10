@@ -3,6 +3,7 @@ import posts from '../../constants/posts'
 import PostPreview from './PostPreview'
 
 export default function Home() {
+
     return (
         <div className="wrapper my-8">
             <div className="container">
