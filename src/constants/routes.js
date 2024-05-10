@@ -10,5 +10,6 @@ const routes = {
     post: '/posts/:post',
     category: '/categorys/:category',
     adminHome: '/admin',
+    userHome: '/user'
 }
 export default routes

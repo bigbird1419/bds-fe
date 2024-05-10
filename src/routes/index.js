@@ -8,7 +8,11 @@ import Blogs from "../pages/Blogs"
 import PricingPage from "../pages/PricingPage"
 import PostPage from "../pages/PostPage"
 import Categorys from "../pages/Categorys"
+
+import LayoutAdmin from "../pages/Admin/Layout"
+import LayoutUser from '../pages/User/Layout'
 import AdminHome from '../pages/Admin/Home'
+import UserHome from '../pages/User/Home'
 
 const publicRoutes = [
     { path: routes.home, component: Home },
@@ -18,10 +22,12 @@ const publicRoutes = [
     { path: routes.pricing, component: PricingPage, layout: NoFilterLayout },
     { path: routes.post, component: PostPage, layout: OnlyHeaderLayout },
     { path: routes.category, component: Categorys },
+    { path: routes.category, component: UserHome },
 ]
 
 const privateRoutes = [
-    { path: routes.adminHome, component: AdminHome },
+    { path: routes.adminHome, component: AdminHome, layout: LayoutAdmin },
+    { path: routes.userHome, component: UserHome, layout: LayoutUser },
 ]
 
 export { publicRoutes, privateRoutes }
