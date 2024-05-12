@@ -47,9 +47,9 @@ export default function Blogs() {
                                 </div>
                                 <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12">
                                     {blogs.map((blog, i) => {
-                                        if (i < 2) {
+                                        if (i > 0 && i < 3) {
                                             return (
-                                                <div className="cursor-pointer" key={i} onClick={() => hanldeSetCurBlog(blog)}>
+                                                <div className="cursor-pointer mb-3" key={i} onClick={() => hanldeSetCurBlog(blog)}>
                                                     <div>
                                                         <img src={blog.avatar} alt="" className="w-full" />
                                                     </div>

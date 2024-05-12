@@ -1,24 +1,37 @@
+import routes from '../../../constants/routes'
 import forSale from '../../../assets/for-sale.svg'
 import forRent from '../../../assets/for-rent.svg'
 import Button from '../../../components/Button'
 
-const categorys = [
-    { path: '/', title: 'Bán căn chung cư' },
-    { path: '/', title: 'Bán căn chung cư' },
-    { path: '/', title: 'Bán căn chung cư' },
-    { path: '/', title: 'Bán căn chung cư' },
-    { path: '/', title: 'Bán căn chung cư' },
-    { path: '/', title: 'Bán căn chung cư' },
-    { path: '/', title: 'Bán căn chung cư' },
-    { path: '/', title: 'Bán căn chung cư' },
-    { path: '/', title: 'Bán căn chung cư' },
-    { path: '/', title: 'Bán căn chung cư' },
+const sales = [
+    { path: routes.muaban, title: 'Bán căn chung cư' },
+    { path: routes.muaban, title: 'Bán nhà, bán nhà riêng' },
+    { path: routes.muaban, title: 'Bán nhà mặt tiền (mặt phố)' },
+    { path: routes.muaban, title: 'Bán đất nền dự án' },
+    { path: routes.muaban, title: 'Bán biệt thự, nhà liền kề' },
+    { path: routes.muaban, title: 'Bán đất' },
+    { path: routes.muaban, title: 'Bán cửa hàng, kiot, shophouse' },
+    { path: routes.muaban, title: 'Bán nhà trọ, dãy phòng trọ' },
+    { path: routes.muaban, title: 'Bán kho, nhà xưởng' },
+    { path: routes.muaban, title: 'Bán nhà hàng, khách sạn, nhà nghỉ' },
+]
+const rents = [
+    { path: routes.chothue, title: 'Cho thuê căn chung cư' },
+    { path: routes.chothue, title: 'Cho thuê nhà, Cho thuê nhà riêng' },
+    { path: routes.chothue, title: 'Cho thuê nhà mặt tiền (mặt phố)' },
+    { path: routes.chothue, title: 'Cho thuê đất nền dự án' },
+    { path: routes.chothue, title: 'Cho thuê biệt thự, nhà liền kề' },
+    { path: routes.chothue, title: 'Cho thuê đất' },
+    { path: routes.chothue, title: 'Cho thuê cửa hàng, kiot, shophouse' },
+    { path: routes.chothue, title: 'Cho thuê nhà trọ, dãy phòng trọ' },
+    { path: routes.chothue, title: 'Cho thuê kho, nhà xưởng' },
+    { path: routes.chothue, title: 'Cho thuê nhà hàng, khách sạn, nhà nghỉ' },
 ]
 
 export default function CategoryChild() {
     return (
         <div className="wrapper">
-            <div className="container max-w-5xl my-8">
+            <div className="container max-w-6xl my-8">
                 <h1 className="text-center text-3xl font-bold mb-2">Tìm kiếm bất động sản giá tốt</h1>
                 <p className="text-gray-400 text-center text-sm">Bds123 là kênh bất động sản số 1 tại Việt Nam. Hiện có 280.717+ tin rao mua bán & cho thuê BDS, nhà đất như: căn hộ, đất nền, nhà riêng. Đăng tin bất động sản hiệu quả với 1.000.000+ mỗi tháng.</p>
                 <div className='my-3'>
@@ -36,9 +49,9 @@ export default function CategoryChild() {
                                 </div>
                                 <div>
                                     <div className='row'>
-                                        {categorys.map((category, i) => (
+                                        {sales.map((category, i) => (
                                             <div className='col-6' key={i}>
-                                                <Button to={category.path} className={'text-md hover:text-colorPrimary duration-300 transition-all mb-3'}>
+                                                <Button to={category.path} className={'text-md hover:text-colorPrimary duration-300 transition-all mb-2 truncate text-ellipsis block w-full'}>
                                                     <i className="fa-solid fa-angle-right mr-3 text-colorPrimary text-xs"></i>
                                                     {category.title}
                                                 </Button>
@@ -61,9 +74,9 @@ export default function CategoryChild() {
                                 </div>
                                 <div>
                                     <div className='row'>
-                                        {categorys.map((category, i) => (
+                                        {rents.map((category, i) => (
                                             <div className='col-6' key={i}>
-                                                <Button to={category.path} className={'text-md hover:text-colorPrimary duration-300 transition-all mb-3'}>
+                                                <Button to={category.path} className={'text-md hover:text-colorPrimary duration-300 transition-all mb-2 truncate text-ellipsis block w-full'}>
                                                     <i className="fa-solid fa-angle-right mr-3 text-colorPrimary text-xs"></i>
                                                     {category.title}
                                                 </Button>

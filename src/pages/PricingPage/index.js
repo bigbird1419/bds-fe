@@ -12,42 +12,42 @@ const pricings = [
     {
         primaryColor: '#108798',
         type: 'Tin VIP 3',
-        priceForDay: { value: '1000' },
-        priceFor5Day: { value: '5000' },
-        priceFor10Day: { value: '10000', saveMoney: 'Tiết kiệm 8.000₫' },
-        priceFor15Day: { value: '12000', saveMoney: 'Tiết kiệm 3.000₫' },
-        priceFor30Day: { value: '22000', saveMoney: 'Tiết kiệm 3.000₫' },
-        pushPost: '1000'
+        priceForDay: { value: '5.000' },
+        priceFor5Day: { value: '25.000' },
+        priceFor10Day: { value: '45.000', saveMoney: 'Tiết kiệm 5.000₫' },
+        priceFor15Day: { value: '64.000', saveMoney: 'Tiết kiệm 11.000₫' },
+        priceFor30Day: { value: '112.000', saveMoney: 'Tiết kiệm 38.000₫' },
+        pushPost: '2000'
     },
     {
         primaryColor: '#ea2e9d',
         type: 'Tin VIP 2',
-        priceForDay: { value: '1000' },
-        priceFor5Day: { value: '5000' },
-        priceFor10Day: { value: '10000', saveMoney: 'Tiết kiệm 8.000₫' },
-        priceFor15Day: { value: '12000', saveMoney: 'Tiết kiệm 3.000₫' },
-        priceFor30Day: { value: '22000', saveMoney: 'Tiết kiệm 3.000₫' },
-        pushPost: '1000'
+        priceForDay: { value: '10.000' },
+        priceFor5Day: { value: '50.000' },
+        priceFor10Day: { value: '90.000', saveMoney: 'Tiết kiệm 10.000₫' },
+        priceFor15Day: { value: '128.000', saveMoney: 'Tiết kiệm 22.000₫' },
+        priceFor30Day: { value: '225.000', saveMoney: 'Tiết kiệm 75.000₫' },
+        pushPost: '3000'
     },
     {
         primaryColor: '#FF6600',
         type: 'Tin VIP 1',
-        priceForDay: { value: '1000' },
-        priceFor5Day: { value: '5000' },
-        priceFor10Day: { value: '10000', saveMoney: 'Tiết kiệm 8.000₫' },
-        priceFor15Day: { value: '12000', saveMoney: 'Tiết kiệm 3.000₫' },
-        priceFor30Day: { value: '22000', saveMoney: 'Tiết kiệm 3.000₫' },
-        pushPost: '1000'
+        priceForDay: { value: '20.000' },
+        priceFor5Day: { value: '100.000' },
+        priceFor10Day: { value: '180.000', saveMoney: 'Tiết kiệm 20.000₫' },
+        priceFor15Day: { value: '255.000', saveMoney: 'Tiết kiệm 45.000₫' },
+        priceFor30Day: { value: '450.000', saveMoney: 'Tiết kiệm 150.000₫' },
+        pushPost: '4000'
     },
     {
         primaryColor: '#E13427',
         type: 'Tin VIP Đặc biệt',
-        priceForDay: { value: '1000' },
-        priceFor5Day: { value: '5000' },
-        priceFor10Day: { value: '10000', saveMoney: 'Tiết kiệm 8.000₫' },
-        priceFor15Day: { value: '12000', saveMoney: 'Tiết kiệm 3.000₫' },
-        priceFor30Day: { value: '22000', saveMoney: 'Tiết kiệm 3.000₫' },
-        pushPost: '1000'
+        priceForDay: { value: '40.000' },
+        priceFor5Day: { value: '200.000' },
+        priceFor10Day: { value: '360.000', saveMoney: 'Tiết kiệm 40.000₫' },
+        priceFor15Day: { value: '510.000', saveMoney: 'Tiết kiệm 90.000₫' },
+        priceFor30Day: { value: '900.000', saveMoney: 'Tiết kiệm 300.000₫' },
+        pushPost: '5000'
     }
 ]
 

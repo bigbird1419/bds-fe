@@ -1,9 +1,13 @@
+import { useLocation } from "react-router-dom";
+
 import Button from "../../../components/Button";
 import Logo from '../Logo'
 import categorys from "../../../constants/categorys";
 import routes from '../../../constants/routes'
 
 export default function Header() {
+    const currentPage = useLocation().pathname
+
     return (
         <div className="header px-4 py-2">
             <div className="flex justify-between items-center">
@@ -14,7 +18,7 @@ export default function Header() {
                     <ul className="flex">
                         {categorys.map((category, i) => (
                             <li className="mx-2 font-medium text-sm hover:underline hover:text-colorPrimary" key={i}>
-                                <Button to={category.path}>{category.title}</Button>
+                                <Button to={category.path} className={currentPage === category.path ? 'underline text-colorPrimary' : ''}>{category.title}</Button>
                             </li>
                         ))}
                     </ul>
