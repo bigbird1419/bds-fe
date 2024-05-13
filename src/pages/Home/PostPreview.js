@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import FormatDate from "../../components/FormatDate"
 
 export default function PostPreview({ post }) {
 
@@ -8,7 +9,7 @@ export default function PostPreview({ post }) {
                 <div className='relative'>
                     <img src={post.postImgs[0].url} alt='' className='w-full h-44 rounded-md' />
                     <span className='absolute block bottom-1 left-1 text-white text-sm'><i className="fa-regular fa-image mr-2"></i>{post.postImgs.length}</span>
-                    <span className="absolute block bottom-1 right-1 text-white text-sm"><i className="fa-regular fa-clock mr-2"></i> {post.createdDate}</span>
+                    <span className="absolute block bottom-1 right-1 text-white text-sm"><i className="fa-regular fa-clock mr-2"></i> <FormatDate createdDate={post.createdDate} /></span>
                 </div>
                 <div className='p-2'>
                     <h3 className='font-medium text-colorExtraPrimary mb-4'>{post.header}</h3>
