@@ -17,7 +17,7 @@ function FillterItem({ icon, head = 'default', data = [], onClick = () => { } })
             </div>
             {data.length > 0 &&
                 <div>
-                    <span className={'font-medium text-colorPrimary'}>{data[0].title}</span>
+                    <span className={'font-medium text-colorPrimary'}>{data[0].name || 'Tất cả'}</span>
                     {isShowPopup &&
                         <div className="fixed bg-gray-800 bg-opacity-80 top-0 left-0 right-0 bottom-0 z-30">
                             <div className="absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] w-3/6 h-4/5 bg-white rounded-md overflow-hidden z-50">
@@ -29,7 +29,7 @@ function FillterItem({ icon, head = 'default', data = [], onClick = () => { } })
                                     <ul className="p-4">
                                         {data.map((item, i) => (
                                             <li className="p-2 border-b border-gray-200" key={i}>
-                                                <Button className={'text-md'} to={item.path}>{item.title}</Button>
+                                                <Button className={'text-md'} to={`/categorys/${item.code}`} onClick={e => handleChildClickClose(e)}>{item.name}</Button>
                                             </li>
                                         ))}
                                     </ul>

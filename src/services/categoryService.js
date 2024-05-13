@@ -1,7 +1,7 @@
 import * as httpRequest from '../utils/httpRequest'
 import { CATEGORYS } from '../constants/pathService'
 
-export const getCategory = async (name, code) => {
+export const getCategory = async (name = '', code = '') => {
     const rs = httpRequest.get(CATEGORYS, { name, code })
     return rs;
 }
@@ -28,4 +28,5 @@ export const deleteCategoryById = async (id) => {
 
 export const deleteCategorys = async (data) => {
     const rs = httpRequest.deletes(CATEGORYS, data)
+    return rs
 }
