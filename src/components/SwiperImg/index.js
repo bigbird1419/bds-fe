@@ -22,10 +22,10 @@ export default function SwiperImg({ data }) {
                 modules={[Pagination, Navigation]}
                 className="mySwiper h-80"
             >
-                {data.map((urlImg, i) => (
+                {data.map((item, i) => (
                     <SwiperSlide key={i}>
                         <div className='bg-black-400 px-4 h-full w-full'>
-                            <img src={urlImg} alt='' className='h-full object-cover mx-auto' />
+                            <img src={item.url} alt='' className='h-full object-cover mx-auto' />
                         </div>
                     </SwiperSlide>
                 ))}

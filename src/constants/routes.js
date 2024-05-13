@@ -7,7 +7,7 @@ const routes = {
     muaban: '/categorys/mua-ban',
     chothue: '/categorys/cho-thue',
     pricing: '/bang-gia-dich-vu',
-    post: '/posts/:post',
+    post: '/posts/:postId',
     category: '/categorys/:category',
     adminHome: '/admin',
     userHome: '/user'
