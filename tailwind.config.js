@@ -18,7 +18,9 @@ module.exports = {
                 colorWarning: ' #f6c23e',
                 colorSuccess: '#1cc88a',
                 colorFB: '#345387',
-                colorF9: '#f9f9f9'
+                colorF9: '#f9f9f9',
+                colorGreen: '#009688',
+                colorPink: '#ff71b6',
             },
             zIndex: {
                 '100': '100',

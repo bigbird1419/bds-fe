@@ -5,6 +5,7 @@ import SwiperImg from '../../components/SwiperImg'
 import Button from "../../components/Button"
 import { getPostById } from '../../services/postService'
 import FormatDate from "../../components/FormatDate"
+import Calculator from "../../components/Calculator"
 
 export default function PostPage() {
     const { postId } = useParams()
@@ -50,6 +51,10 @@ export default function PostPage() {
                                         <p key={i} className="mb-2">{item}</p>
                                     ))}
                                 </div>
+                            </div>
+                            <div className="calculator mb-4">
+                                <h1 className="underline font-bold text-md mb-4">Tính lãi suất vay</h1>
+                                <Calculator price={post.price} />
                             </div>
                         </div>
                     </div>
