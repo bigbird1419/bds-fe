@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
-import { NumericFormat } from 'react-number-format'
 
 import FormatDate from "../../components/FormatDate"
+import FormatNumeric from "../../components/FormatNumeric"
 
 export default function PostPreview({ post }) {
 
@@ -17,11 +17,7 @@ export default function PostPreview({ post }) {
                     <h3 className='font-medium text-colorExtraPrimary mb-4'>{post.header}</h3>
                     <p className='flex text-sm mb-2'>
                         <span className='font-medium mr-4 text-green-400'>
-                            <NumericFormat
-                                value={post.price}
-                                displayType={'text'}
-                                thousandSeparator={true}
-                            />
+                            <FormatNumeric number={post.price} />
                         </span>
                         <span><i className="fa-regular fa-square-full mr-2"></i>{post.acreage}m<sup>2</sup></span>
                     </p>

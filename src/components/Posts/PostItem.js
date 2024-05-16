@@ -1,7 +1,6 @@
-import { NumericFormat } from 'react-number-format'
-
 import Button from "../Button";
 import FormatDate from '../FormatDate';
+import FormatNumeric from '../FormatNumeric';
 
 export default function PostItem({ post }) {
 
@@ -21,11 +20,7 @@ export default function PostItem({ post }) {
                         <p className="my-2 flex justify-between items-center">
                             <span className="text-colorSecondary text-lg font-semibold mr-6">
                                 <i className="fa-solid fa-tag mr-2"></i>
-                                <NumericFormat
-                                    value={post.price}
-                                    displayType={'text'}
-                                    thousandSeparator={true}
-                                />
+                                <FormatNumeric number={post.price} />
                             </span>
                             <span className="mr-6 text-sm"><i className="fa-regular fa-square-full mr-2"></i>{post.acreage}m<sup>2</sup></span>
                             <span className="mr-6 text-sm"><i className="fa-regular fa-clock mr-2"></i> <FormatDate date={post.createdDate} /></span>

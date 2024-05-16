@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
-import { NumericFormat } from 'react-number-format'
 
 import CalculatorPieChart from "./CalculatorPieChart"
+import FormatNumeric from "../FormatNumeric"
 
 export default function Calculator({ price = 1800000 }) {
     const [loan, setLoan] = useState(20)
@@ -66,22 +66,30 @@ export default function Calculator({ price = 1800000 }) {
                         <h3 className="text-center font-semibold text-sm text-gray-400 mb-2">Tổng tiền phải trả</h3>
                         {chartData.length > 0 &&
                             <>
-                                <p className="text-center text-colorPrimary font-semibold text-md"><NumericFormat value={chartData[0].value + chartData[1].value + chartData[2].value} displayType={'text'} thousandSeparator={true} /> VNĐ/Tháng</p>
+                                <p className="text-center text-colorPrimary font-semibold text-md">
+                                    <FormatNumeric number={chartData[0].value + chartData[1].value + chartData[2].value} /> VNĐ/Tháng
+                                </p>
                                 <div className="flex justify-center w-full">
                                     <CalculatorPieChart data={chartData} />
                                 </div>
                                 <div className="flex justify-around items-center">
                                     <div className="text-center">
                                         <p className="flex items-center"><span className="block h-2 w-2 rounded-full bg-colorSecondary mr-1"></span>Trả trước</p>
-                                        <p><NumericFormat value={chartData[1].value} displayType={'text'} thousandSeparator={true} /></p>
+                                        <p>
+                                            <FormatNumeric number={chartData[1].value} />
+                                        </p>
                                     </div>
                                     <div className="text-center">
                                         <p className="flex items-center"><span className="block h-2 w-2 rounded-full bg-colorPink mr-1"></span>Tiền vay</p>
-                                        <p><NumericFormat value={chartData[0].value} displayType={'text'} thousandSeparator={true} /></p>
+                                        <p>
+                                            <FormatNumeric number={chartData[0].value} />
+                                        </p>
                                     </div>
                                     <div className="text-center">
                                         <p className="flex items-center"><span className="block h-2 w-2 rounded-full bg-colorGreen mr-1"></span>Lãi cần trả</p>
-                                        <p><NumericFormat value={chartData[2].value} displayType={'text'} thousandSeparator={true} /></p>
+                                        <p>
+                                            <FormatNumeric number={chartData[2].value} />
+                                        </p>
                                     </div>
                                 </div>
                             </>
@@ -89,7 +97,9 @@ export default function Calculator({ price = 1800000 }) {
                     </div>
                     <div className="w-1/2">
                         <h3 className="text-center font-semibold text-sm text-gray-400 mb-2">Lãi suất</h3>
-                        <p className="text-center text-colorPrimary font-semibold text-md"><NumericFormat value={priceForMonth} displayType={'text'} thousandSeparator={true} /> VNĐ/Tháng</p>
+                        <p className="text-center text-colorPrimary font-semibold text-md">
+                            <FormatNumeric number={priceForMonth} /> VNĐ/Tháng
+                        </p>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import { PieChart, Pie, Cell, Tooltip } from 'recharts'
-import { NumericFormat } from 'react-number-format'
+import FormatNumeric from '../FormatNumeric';
 
 const COLORS = ['#ff71b6', '#007bff', '#009688']
 
@@ -9,12 +9,7 @@ const CustomTooltip = ({ active, payload }) => {
         return (
             <div className="custom-tooltip">
                 <p className='text-sm font-bold'>{data.label}</p>
-                <NumericFormat
-                    value={data.value}
-                    displayType={'text'}
-                    thousandSeparator={true}
-                />
-                {/* <p>{data.value}</p> */}
+                <FormatNumeric number={data.value}/>
             </div>
         );
     }

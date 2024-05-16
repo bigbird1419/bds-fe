@@ -6,6 +6,7 @@ import Button from "../../components/Button"
 import { getPostById } from '../../services/postService'
 import FormatDate from "../../components/FormatDate"
 import Calculator from "../../components/Calculator"
+import FormatNumeric from "../../components/FormatNumeric"
 
 export default function PostPage() {
     const { postId } = useParams()
@@ -30,7 +31,10 @@ export default function PostPage() {
                                 <h1 className="text-colorPrimary text-2xl font-medium my-2">{post.header}</h1>
                                 <p className="text-xs text-gray-800"><i className="fa-solid fa-location-dot mr-2 my-2"></i> {post.area?.city.name}, {post.area?.name}</p>
                                 <p className=" my-2">
-                                    <span className="text-colorSecondary text-lg font-semibold mr-6"><i className="fa-solid fa-tag mr-2"></i> {post.price}</span>
+                                    <span className="text-colorSecondary text-lg font-semibold mr-6">
+                                        <i className="fa-solid fa-tag mr-2"></i>
+                                        <FormatNumeric number={post.price} />
+                                    </span>
                                     <span className="mr-6"><i className="fa-regular fa-square-full mr-2"></i>{post.acreage}m<sup>2</sup></span>
                                     <span className="mr-6"><i className="fa-regular fa-clock mr-2"></i> <FormatDate date={post.createdDate} /></span>
                                 </p>
