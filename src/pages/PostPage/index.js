@@ -32,7 +32,7 @@ export default function PostPage() {
                                 <p className=" my-2">
                                     <span className="text-colorSecondary text-lg font-semibold mr-6"><i className="fa-solid fa-tag mr-2"></i> {post.price}</span>
                                     <span className="mr-6"><i className="fa-regular fa-square-full mr-2"></i>{post.acreage}m<sup>2</sup></span>
-                                    <span className="mr-6"><i className="fa-regular fa-clock mr-2"></i> <FormatDate createdDate={post.createdDate} /></span>
+                                    <span className="mr-6"><i className="fa-regular fa-clock mr-2"></i> <FormatDate date={post.createdDate} /></span>
                                 </p>
                             </div>
                             <div className="swiper mb-4">

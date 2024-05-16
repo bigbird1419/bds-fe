@@ -1,10 +1,27 @@
-import Button from "../../components/Button";
-import Pagination from "../../components/Pagination";
-import Posts from "../../components/Posts";
-import categorys from "../../constants/categorys";
-import posts from "../../constants/posts";
+import { useParams } from "react-router-dom"
+import { useEffect, useState } from "react"
+
+import Button from "../../components/Button"
+import Pagination from "../../components/Pagination"
+import Posts from "../../components/Posts"
+import categorys from "../../constants/categorys"
+import { getPosts } from '../../services/postService'
 
 export default function Categorys() {
+    const { categoryCode } = useParams()
+    const [posts, setPosts] = useState([])
+
+    useEffect(() => {
+        const getData = async () => {
+            const rs = await getPosts({
+                city: categoryCode,
+                area: categoryCode,
+                category: categoryCode
+            })
+            setPosts(rs.data)
+        }
+        getData()
+    }, [categoryCode])
 
     return (
         <div className="wrapper">
@@ -12,10 +29,12 @@ export default function Categorys() {
                 <div className="row">
                     <div className="col-xl-8 col-lg-8 col-md-6 col-sm-12">
                         <div className="mb-4">
-                            <Posts data={posts} />
+                            {posts.length > 0 &&
+                                <Posts data={posts} />
+                            }
                         </div>
                         <div className="my-4">
-                            <Pagination totalPage={10} page={1}/>
+                            <Pagination totalPage={10} page={1} />
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">

@@ -22,7 +22,6 @@ export default function Calculator({ price = 1800000 }) {
         ])
         setPriceForMonth(traMoiThang)
     }, [loan, time, rate, price])
-    console.log(1)
 
     return (
         <div className="wrapper bg-gray-100 rounded-md p-3">
@@ -32,7 +31,7 @@ export default function Calculator({ price = 1800000 }) {
                         <h3>Giá nhà đất</h3>
                     </div>
                     <div className="w-3/4">
-                        <input value={price} type="text" className="w-full rounded-md border p-2" />
+                        <input value={price} readOnly type="text" className="w-full rounded-md border p-2" />
                     </div>
                 </div>
                 <div className="flex justify-between items-center mb-4">
@@ -40,7 +39,7 @@ export default function Calculator({ price = 1800000 }) {
                         <h3>Số tiền vay</h3>
                     </div>
                     <div className="w-3/4 relative">
-                        <input value={loan} min={10} max={100} type="range" className="w-full rounded-md border p-1" onChange={e => setLoan(e.target.value)} />
+                        <input value={loan} min={10} max={100} step={5} type="range" className="w-full rounded-md border p-1" onChange={e => setLoan(e.target.value)} />
                         <span className="absolute bottom-100 right-0 text-xs font-medium">{loan}%</span>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ const routes = {
     chothue: '/categorys/cho-thue',
     pricing: '/bang-gia-dich-vu',
     post: '/posts/:postId',
-    category: '/categorys/:category',
+    category: '/categorys/:categoryCode',
     adminHome: '/admin',
     userHome: '/user'
 }
