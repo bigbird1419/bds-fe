@@ -37,7 +37,7 @@ export default function CategoryChild() {
                 <div className='my-3'>
                     <div className="row">
                         <div className="col-6">
-                            <div className='p-3 rounded border-1 border-gray-100'>
+                            <div className='h-full p-3 rounded border-1 border-gray-100'>
                                 <div className="flex mb-3">
                                     <div className='w-1/4 rounded-full p-2 bg-gray-200 mr-4'>
                                         <img src={forSale} alt="..." className="w-full rounded-full" />
@@ -62,7 +62,7 @@ export default function CategoryChild() {
                             </div>
                         </div>
                         <div className="col-6">
-                            <div className='p-3 rounded border-1 border-gray-100'>
+                            <div className='h-full p-3 rounded border-1 border-gray-100'>
                                 <div className="flex mb-3">
                                     <div className='w-1/4 rounded-full p-2 bg-gray-200 mr-4'>
                                         <img src={forRent} alt="..." className="w-full rounded-full" />

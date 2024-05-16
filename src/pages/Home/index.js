@@ -6,12 +6,15 @@ import Button from '../../components/Button'
 import PostPreview from './PostPreview'
 
 export default function Home() {
-    const [posts, setPosts] = useState([])
+    const [postsSale, setPostsSale] = useState([])
+    const [postsRent, setPostsRent] = useState([])
 
     useEffect(() => {
         const getData = async () => {
-            const rs = await getPosts()
-            setPosts(rs.data)
+            const rs1 = await getPosts({ category: 'mua-ban' })
+            const rs2 = await getPosts({ category: 'cho-thue' })
+            setPostsSale(rs1.data)
+            setPostsRent(rs2.data)
         }
         getData()
     }, [])
@@ -27,16 +30,24 @@ export default function Home() {
                         </Button>
                     </div>
                     <div className='row'>
-                        {posts.map((post, i) => {
-                            if (i < 4) {
-                                return (
-                                    <div key={i} className='col-3'>
-                                        <PostPreview post={post} />
-                                    </div>
-                                )
-                            }
-                            return null
-                        })}
+                        {postsSale.length > 0 ?
+                            <div className='mb-4'>
+                                {postsSale.map((post, i) => {
+                                    if (i < 4) {
+                                        return (
+                                            <div key={i} className='col-3'>
+                                                <PostPreview post={post} />
+                                            </div>
+                                        )
+                                    }
+                                    return null
+                                })}
+                            </div>
+                            :
+                            <div className='mb-4'>
+                                <h3>Chưa có bài đăng mới</h3>
+                            </div>
+                        }
                     </div>
                 </div>
                 <div className="lease my-6 max-w-6xl mx-auto">
@@ -47,16 +58,24 @@ export default function Home() {
                         </Button>
                     </div>
                     <div className='row'>
-                        {posts.map((post, i) => {
-                            if (i < 4) {
-                                return (
-                                    <div key={i} className='col-3'>
-                                        <PostPreview post={post} />
-                                    </div>
-                                )
-                            }
-                            return null
-                        })}
+                        {postsRent.length > 0 ?
+                            <div className='mb-4'>
+                                {postsRent.map((post, i) => {
+                                    if (i < 4) {
+                                        return (
+                                            <div key={i} className='col-3'>
+                                                <PostPreview post={post} />
+                                            </div>
+                                        )
+                                    }
+                                    return null
+                                })}
+                            </div>
+                            :
+                            <div className='mb-4'>
+                                <h3>Chưa có bài đăng mới</h3>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>
