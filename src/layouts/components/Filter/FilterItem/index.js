@@ -29,7 +29,7 @@ function FillterItem({ icon, head = 'default', data = [], onClick = () => { } })
                                     <ul className="p-4">
                                         {data.map((item, i) => (
                                             <li className="p-2 border-b border-gray-200" key={i}>
-                                                <Button className={'text-md'} to={`/categorys/${item.code}`} onClick={e => handleChildClickClose(e)}>{item.name}</Button>
+                                                <Button className={'text-md'} to={`/the-loai/${item.code}`} onClick={e => handleChildClickClose(e)}>{item.name}</Button>
                                             </li>
                                         ))}
                                     </ul>

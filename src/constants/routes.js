@@ -4,11 +4,11 @@ const routes = {
     signup: '/signup',
     contact: '/ho-tro',
     blogs: '/tin-tuc',
-    muaban: '/categorys/mua-ban',
-    chothue: '/categorys/cho-thue',
+    muaban: '/the-loai/mua-ban',
+    chothue: '/the-loai/cho-thue',
     pricing: '/bang-gia-dich-vu',
-    post: '/posts/:postId',
-    category: '/categorys/:categoryCode',
+    post: '/bai-dang/:postId',
+    category: '/the-loai/:categoryCode',
     adminHome: '/admin',
     userHome: '/user'
 }

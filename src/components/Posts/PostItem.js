@@ -15,7 +15,7 @@ export default function PostItem({ post }) {
                 <div className="ml-4">
                     <div className="flex flex-col justify-between h-full">
                         <h3 className="text-colorPrimary text-xl font-semibold my-2">
-                            <Button to={`/posts/${post.id}`}>{post.header}</Button>
+                            <Button to={`/bai-dang/${post.id}`}>{post.header}</Button>
                         </h3>
                         <p className="my-2 flex justify-between items-center">
                             <span className="text-colorSecondary text-lg font-semibold mr-6">
