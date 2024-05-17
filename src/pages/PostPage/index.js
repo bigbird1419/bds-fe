@@ -75,7 +75,7 @@ export default function PostPage() {
                                     <i className="fa-solid fa-phone mr-2"></i>
                                     {post.user?.phone}
                                 </Button>
-                                <Button href={`tel:${post.user?.phone}`} className={'m-2 bg-colorSecondary text-white px-4 py-2 rounded hover:opacity-80 hover:underline transition-all duration-300'}>
+                                <Button href={`https://zalo.me/${post.user?.phone}`} className={'m-2 bg-colorSecondary text-white px-4 py-2 rounded hover:opacity-80 hover:underline transition-all duration-300'}>
                                     Nhắn Zalo
                                 </Button>
                             </div>

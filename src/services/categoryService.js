@@ -12,12 +12,12 @@ export const getCategoryById = async (id = 1) => {
 }
 
 export const postCategory = async (data = {}) => {
-    const rs = httpRequest.post(CATEGORYS, { data })
+    const rs = httpRequest.post(CATEGORYS, data)
     return rs
 }
 
 export const putCategory = async (id, data = {}) => {
-    const rs = httpRequest.post(CATEGORYS, id, { data })
+    const rs = httpRequest.post(CATEGORYS, id, data)
     return rs
 }
 
@@ -27,6 +27,6 @@ export const deleteCategoryById = async (id) => {
 }
 
 export const deleteCategorys = async (data) => {
-    const rs = httpRequest.deletes(CATEGORYS, { data })
+    const rs = httpRequest.deletes(CATEGORYS, data)
     return rs
 }

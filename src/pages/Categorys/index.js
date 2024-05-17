@@ -29,13 +29,20 @@ export default function Categorys() {
                 <div className="row">
                     <div className="col-xl-8 col-lg-8 col-md-6 col-sm-12">
                         <div className="mb-4">
-                            {posts.length > 0 &&
-                                <Posts data={posts} />
+                            {posts.length > 0 ?
+                                <div>
+                                    <Posts data={posts} />
+                                    <div className="my-4">
+                                        <Pagination totalPage={10} page={1} />
+                                    </div>
+                                </div>
+                                :
+                                <div className="my-4">
+                                    <h3 className="text-md font-medium">Chưa có bài đăng mới</h3>
+                                </div>
                             }
                         </div>
-                        <div className="my-4">
-                            <Pagination totalPage={10} page={1} />
-                        </div>
+
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                         <div>
