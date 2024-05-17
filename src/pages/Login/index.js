@@ -1,11 +1,15 @@
-import { useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
+import { AuthContext } from '../../contexts/AuthContext'
 import Button from '../../components/Button'
 import { signIn } from '../../services/userService'
 
 export default function Login() {
+    const { isLogin, setIsLogin, setUser } = useContext(AuthContext)
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const navigate = useNavigate()
 
     const handleLogin = async (e) => {
         e.preventDefault()
@@ -13,8 +17,18 @@ export default function Login() {
             username,
             password
         })
-        console.log(res)
+        if (res.status === 'Ok') {
+            setIsLogin(true)
+            setUser(res.data)
+            navigate('/')
+        }
     }
+
+    useEffect(() => {
+        if (isLogin) {
+            return navigate('/')
+        }
+    }, [isLogin, navigate])
 
     return (
         <div className="wrapper my-8 mx-auto">
