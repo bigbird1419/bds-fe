@@ -1,17 +1,20 @@
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
+import { useContext, useState } from 'react'
+
 import userCategory from '../../../constants/userCategory'
 import Menu from '../components/Menu'
-import { useState } from 'react'
 import Button from '../../../components/Button'
+import { AuthContext } from '../../../contexts/AuthContext'
 
 export default function LayoutUser({ children }) {
     const [isShowNav, setIsShowNav] = useState(false)
+    const { isLogin, user } = useContext(AuthContext)
 
     const hanldeToggleShowNav = () => {
         setIsShowNav(e => !e)
     }
 
-    return (
+    if (isLogin && user?.roles.includes('ROLE_USER')) return (
         <div className="wrapper ">
             <div className='container-fluid'>
                 <div className="row">
@@ -52,4 +55,5 @@ export default function LayoutUser({ children }) {
             </div>
         </div>
     )
+    else return <Navigate to={'/'} />
 }

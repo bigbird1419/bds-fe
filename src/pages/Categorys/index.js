@@ -38,7 +38,7 @@ export default function Categorys() {
                                 </div>
                                 :
                                 <div className="my-4">
-                                    <h3 className="text-md font-medium">Chưa có bài đăng mới</h3>
+                                    <h3 className="text-xl font-medium text-center">Chưa có bài đăng mới</h3>
                                 </div>
                             }
                         </div>

@@ -39,8 +39,8 @@ export default function CategoryChild() {
                         <div className="col-6">
                             <div className='h-full p-3 rounded border-1 border-gray-100'>
                                 <div className="flex mb-3">
-                                    <div className='w-1/4 rounded-full p-2 bg-gray-200 mr-4'>
-                                        <img src={forSale} alt="..." className="w-full rounded-full" />
+                                    <div className='rounded-full p-2 bg-gray-200 mr-4'>
+                                        <img src={forSale} alt="..." className="w-20 rounded-full object-cover" />
                                     </div>
                                     <div>
                                         <h3 className='text-2xl font-semibold'>Mua bán nhà đất</h3>
@@ -64,8 +64,8 @@ export default function CategoryChild() {
                         <div className="col-6">
                             <div className='h-full p-3 rounded border-1 border-gray-100'>
                                 <div className="flex mb-3">
-                                    <div className='w-1/4 rounded-full p-2 bg-gray-200 mr-4'>
-                                        <img src={forRent} alt="..." className="w-full rounded-full" />
+                                    <div className='rounded-full p-2 bg-gray-200 mr-4'>
+                                        <img src={forRent} alt="..." className="w-20 rounded-full object-cover" />
                                     </div>
                                     <div>
                                         <h3 className='text-2xl font-semibold'>Cho thuê nhà đất</h3>
@@ -86,6 +86,31 @@ export default function CategoryChild() {
                                 </div>
                             </div>
                         </div>
+                        {/* <div className="col-6">
+                            <div className='h-full p-3 rounded border-1 border-gray-100'>
+                                <div className="flex mb-3">
+                                    <div className='w-1/4 rounded-full p-2 bg-gray-200 mr-4'>
+                                        <img src={forRent} alt="..." className="w-full rounded-full object-cover" />
+                                    </div>
+                                    <div>
+                                        <h3 className='text-2xl font-semibold'>Cho thuê nhà đất</h3>
+                                        <p className='text-sm text-gray-400'>Hiện tại có rất nhiều tin đăng cho thuê, tha hồ để bạn tìm kiếm và lựa chọn sản phẩm phù hợp.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className='row'>
+                                        {rents.map((category, i) => (
+                                            <div className='col-6' key={i}>
+                                                <Button to={category.path} className={'text-md hover:text-colorPrimary duration-300 transition-all mb-2 truncate text-ellipsis block w-full'}>
+                                                    <i className="fa-solid fa-angle-right mr-3 text-colorPrimary text-xs"></i>
+                                                    {category.title}
+                                                </Button>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
